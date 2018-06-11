@@ -1,0 +1,119 @@
+
+.wrapper{
+
+    display:grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    ' about'
+    ' skills'
+    ' portofolio'
+    ' contact'
+    ' footer';
+    
+}
+
+.main {
+
+    /* max-width: 800px; */
+    margin-left: 200px;
+}
+
+
+.boxes{
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.box {
+
+    background: white;
+    padding: 10px;
+    border: 1px sold black;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0,0,0, .6)
+}
+
+.about {
+
+grid-area:about;
+padding: 30px;
+}
+
+.skills {
+
+    grid-area:skills;
+    padding: 30px;
+
+}
+.contact {
+
+    grid-area:contact;
+    display: grid;
+    align-content: center;
+    grid-gap: 15px;
+    margin: auto auto;
+    width: 400px;
+
+
+ }
+
+ .contact input {
+    box-shadow: var(--shadow);
+    height: 30px;
+
+    
+}
+
+
+.portofolio {
+background: #ddd;
+padding: 40px;
+display:grid;
+grid-area: portofolio;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-gap: 10px;
+
+}
+
+
+.portofolio img {
+
+    width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: all 0.5s;
+
+}
+.portofolio img:hover {
+
+    transform: scale(1.1);
+    border-color: #ddd;
+    box-shadow: 0 0 10px #ddd;
+
+}
+
+.footer {
+
+    background: #ccc;
+    padding: 30px;
+    display: grid;
+    grid-area: footer;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    
+}
+.footer li{
+
+    list-style: none;
+    color:#000;
+
+    
+}
+
+
